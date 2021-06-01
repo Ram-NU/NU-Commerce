@@ -1,0 +1,21 @@
+.body{
+    background-image:url('C:/react/NU-Commerce/src/header/main-background.jpg');
+    height:500px;
+    position: relative;
+}    
+
+.bgimg{
+    width:max-content;
+    height:fit-content;
+}    
+
+.container{
+    
+    margin-top: 50px;
+    height: 400px;
+    margin-left: 10%;
+    width:80%;
+    margin-right: 10%;
+    position: absolute;
+    border-radius: 10px;
+}    
