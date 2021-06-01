@@ -1,16 +1,23 @@
-.body{
+.bg-img{
     background-image:url('C:/react/NU-Commerce/src/header/main-background.jpg');
-    height:500px;
+    height:245px;
     position: relative;
-}    
-
-.bgimg{
-    width:max-content;
-    height:fit-content;
-}    
+    background-repeat: no-repeat;
+    background-color: blue;
+} 
+.message{
+    height:40px;
+    margin-left: 5%;
+    margin-top:50px;
+    position:absolute;
+    width: 90%;
+    justify-content: center;
+    border-style: solid;
+    background-color: grey;
+}   
+    
 
 .container{
-    
     margin-top: 50px;
     height: 400px;
     margin-left: 10%;
@@ -18,4 +25,8 @@
     margin-right: 10%;
     position: absolute;
     border-radius: 10px;
+}  
+
+p{
+    margin-top:10px;
 }    

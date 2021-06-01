@@ -1,0 +1,43 @@
+.card-container{
+    margin-top:200px;
+    display:flex;
+    width:300px;
+    height:400px;
+    background-color: white;
+    overflow: hidden;
+    transition: 2s;
+    animation:ease-in-out;
+    box-shadow: 0px 0px 15px -5px;
+    flex-direction: column;
+}    
+
+.card-image img{
+    overflow: hidden;
+    height:250px;
+    width:250px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 20px;
+}    
+
+.card-button button{
+    justify-content: center;
+    background-color: skyblue;
+    transition: 2s;
+    width:100px;
+    height:50px;
+    margin-top: 10px;
+} 
+
+.card-title{
+    justify-content: center;
+    font-size:30px;
+    color: skyblue;
+    font-weight: bolder;
+    margin-top:10px;
+}    
+
+.b{
+    color:black;
+    font-weight: bolder;
+}    
