@@ -1,25 +1,32 @@
 import React from 'react';
 import './Card-view.css';
-import image1 from 'C:/react/NU-Commerce/src/header/main-background.jpg';
+import image1 from '../header/main-background.jpg';
+import Categories from './Data.js';
 
 const al=()=>{
     alert("Hai!");
 }    
 
-class CardView extends React.Component {
+class CardView extends React.Component {        
     render(){
         return(
-            <div className="card-container">
-                <div className="card-title">
-                    Electronics
-                 </div>   
-                <div className="card-image">
-                    <img src={image1} alt="card-img"/>          
-                </div>
-                <div className="card-button">
-                    <button className onClick={al}>View</button>
-                </div>        
-            </div>    
+            <div>
+            {Categories.map((items)=>(
+                <section className="card-container">                    
+                    
+                    <section className="card-title">
+                        {items.category}
+                    </section>   
+                    <section className="card-image">
+                        <img src={image1} alt="card-img"/>          
+                    </section>
+                    <section className="card-button">
+                        <button onClick={al}>View</button>
+                    </section> 
+                    
+                </section>        
+            ))} 
+            </div>       
         );
     }      
 } 

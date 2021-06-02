@@ -45,11 +45,6 @@
     margin-top: 17px;
     border-radius: 5px;
     background-color: yellow;
-    border-top: salmon;
-    border-left: salmon;
-    border-right: salmon;
-    border-bottom: salmon;
-    outline-style: none;
 }   
 
 .search-text {
@@ -81,11 +76,6 @@
     margin-left: 100px;
     border-radius: 5px;
     background-color: yellow;
-    border-top: salmon;
-    border-left: salmon;
-    border-right: salmon;
-    border-bottom: salmon;
-    outline-style: none;
 }   
 
 .cart-b{

@@ -11,7 +11,7 @@ class Bodyhome extends React.Component{
             <div className="body">
                 <div className="bg-img">
                     <img src="" alt=""/>
-                 </div>   
+                </div>   
                 <div className="message">
                     <p>
                         Welcome to NU Commerce! Enjoy purchasing this week full of offer upto 50% Click here:

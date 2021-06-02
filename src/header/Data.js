@@ -1,30 +1,34 @@
 const Categories=[
     {
-        category:'Top Offer',
+        category:'Top Offer'
     },
 
     {
         category:'Electronics',
-    },
-    
-    {
-        category:'Electronics',
+        image:'../header/main-background.jpg'
     },
     {
-        category:'Electronics',
+        category:'Books'
     },
     {
-        category:'Electronics',
+        category:'Men'
     },
     {
-        category:'Electronics',
+        category:'Women'
     },
     {
-        category:'Electronics',
+        category:'Eye Glasses'
     },
     {
-        category:'Electronics',
+        category:'Groceries'
+    },
+    {
+        category:'Medicines'
+    },
+    {
+        category:'Bags'
     }
+    
 ] ;
 
 export default Categories; 

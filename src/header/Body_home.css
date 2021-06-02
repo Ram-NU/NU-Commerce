@@ -1,32 +1,32 @@
 .bg-img{
     background-image:url('C:/react/NU-Commerce/src/header/main-background.jpg');
     height:245px;
-    position: relative;
     background-repeat: no-repeat;
-    background-color: blue;
 } 
+
 .message{
     height:40px;
     margin-left: 5%;
     margin-top:50px;
-    position:absolute;
     width: 90%;
     justify-content: center;
     border:none;
     background-color: grey;
-}   
-    
-
-.container{
-    margin-top: 50px;
-    height: 400px;
-    margin-left: 10%;
-    width:80%;
-    margin-right: 10%;
-    position: absolute;
-    border-radius: 10px;
+    overflow: hidden;
 }  
+        
+.container div{
+    display:grid;
+    grid-template-columns: 300px 300px 300px;
+    justify-content: center;
+    grid-gap: 50px;
+}    
 
 p{
     margin-top:10px;
+}  
+
+.body{
+    height: 2000px;
+    background-color: #0072B5;
 }    
