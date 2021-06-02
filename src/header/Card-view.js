@@ -1,10 +1,10 @@
 import React from 'react';
 import './Card-view.css';
-import image1 from '../header/main-background.jpg';
+
 import Categories from './Data.js';
 
-const al=()=>{
-    alert("Hai!");
+const al=(caty)=>{
+    alert(caty);
 }    
 
 class CardView extends React.Component {        
@@ -18,10 +18,10 @@ class CardView extends React.Component {
                         {items.category}
                     </section>   
                     <section className="card-image">
-                        <img src={image1} alt="card-img"/>          
+                        <img src={items.image} alt="card-img"/>          
                     </section>
                     <section className="card-button">
-                        <button onClick={al}>View</button>
+                        <button onClick={()=>al(items.category)}>View</button>
                     </section> 
                     
                 </section>        
