@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/NU-Commerce/static/css/main.b1fbe709.chunk.css",
+    "main.css": "/NU-Commerce/static/css/main.d2ec9f07.chunk.css",
     "main.js": "/NU-Commerce/static/js/main.0e1a5914.chunk.js",
     "main.js.map": "/NU-Commerce/static/js/main.0e1a5914.chunk.js.map",
     "runtime-main.js": "/NU-Commerce/static/js/runtime-main.b84b66ef.js",
@@ -10,7 +10,7 @@
     "static/js/3.4135056c.chunk.js": "/NU-Commerce/static/js/3.4135056c.chunk.js",
     "static/js/3.4135056c.chunk.js.map": "/NU-Commerce/static/js/3.4135056c.chunk.js.map",
     "index.html": "/NU-Commerce/index.html",
-    "static/css/main.b1fbe709.chunk.css.map": "/NU-Commerce/static/css/main.b1fbe709.chunk.css.map",
+    "static/css/main.d2ec9f07.chunk.css.map": "/NU-Commerce/static/css/main.d2ec9f07.chunk.css.map",
     "static/js/2.ad91d39f.chunk.js.LICENSE.txt": "/NU-Commerce/static/js/2.ad91d39f.chunk.js.LICENSE.txt",
     "static/media/bags.5e394b20.jpg": "/NU-Commerce/static/media/bags.5e394b20.jpg",
     "static/media/books.ed4b6ad0.jpg": "/NU-Commerce/static/media/books.ed4b6ad0.jpg",
@@ -27,7 +27,7 @@
   "entrypoints": [
     "static/js/runtime-main.b84b66ef.js",
     "static/js/2.ad91d39f.chunk.js",
-    "static/css/main.b1fbe709.chunk.css",
+    "static/css/main.d2ec9f07.chunk.css",
     "static/js/main.0e1a5914.chunk.js"
   ]
 }
