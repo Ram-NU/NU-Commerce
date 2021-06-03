@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/NU-Commerce/static/css/main.a1e01f45.chunk.css",
+    "main.js": "/NU-Commerce/static/js/main.0e1a5914.chunk.js",
+    "main.js.map": "/NU-Commerce/static/js/main.0e1a5914.chunk.js.map",
+    "runtime-main.js": "/NU-Commerce/static/js/runtime-main.b84b66ef.js",
+    "runtime-main.js.map": "/NU-Commerce/static/js/runtime-main.b84b66ef.js.map",
+    "static/js/2.ad91d39f.chunk.js": "/NU-Commerce/static/js/2.ad91d39f.chunk.js",
+    "static/js/2.ad91d39f.chunk.js.map": "/NU-Commerce/static/js/2.ad91d39f.chunk.js.map",
+    "static/js/3.4135056c.chunk.js": "/NU-Commerce/static/js/3.4135056c.chunk.js",
+    "static/js/3.4135056c.chunk.js.map": "/NU-Commerce/static/js/3.4135056c.chunk.js.map",
+    "index.html": "/NU-Commerce/index.html",
+    "static/css/main.a1e01f45.chunk.css.map": "/NU-Commerce/static/css/main.a1e01f45.chunk.css.map",
+    "static/js/2.ad91d39f.chunk.js.LICENSE.txt": "/NU-Commerce/static/js/2.ad91d39f.chunk.js.LICENSE.txt",
+    "static/media/bags.5e394b20.jpg": "/NU-Commerce/static/media/bags.5e394b20.jpg",
+    "static/media/books.ed4b6ad0.jpg": "/NU-Commerce/static/media/books.ed4b6ad0.jpg",
+    "static/media/groceries.0ad3946b.jpg": "/NU-Commerce/static/media/groceries.0ad3946b.jpg",
+    "static/media/logo.6ce24c58.svg": "/NU-Commerce/static/media/logo.6ce24c58.svg",
+    "static/media/main-background.8f4588b3.jpg": "/NU-Commerce/static/media/main-background.8f4588b3.jpg",
+    "static/media/main-background1.94bdb6d6.jpg": "/NU-Commerce/static/media/main-background1.94bdb6d6.jpg",
+    "static/media/main-background2.d6bae284.jpg": "/NU-Commerce/static/media/main-background2.d6bae284.jpg",
+    "static/media/medicines.bb0f4e90.jpg": "/NU-Commerce/static/media/medicines.bb0f4e90.jpg",
+    "static/media/slider.aa87d1ad.jpg": "/NU-Commerce/static/media/slider.aa87d1ad.jpg",
+    "static/media/slider1.baed74a6.jpg": "/NU-Commerce/static/media/slider1.baed74a6.jpg",
+    "static/media/women.4df91f55.jpg": "/NU-Commerce/static/media/women.4df91f55.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b84b66ef.js",
+    "static/js/2.ad91d39f.chunk.js",
+    "static/css/main.a1e01f45.chunk.css",
+    "static/js/main.0e1a5914.chunk.js"
+  ]
+}
