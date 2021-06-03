@@ -1,6 +1,5 @@
 import React from 'react';
 import './Card-view.css';
-
 import Categories from './Data.js';
 
 const al=(caty)=>{
@@ -22,8 +21,8 @@ class CardView extends React.Component {
                     </section>
                     <section className="card-button">
                         <button onClick={()=>al(items.category)}>View</button>
-                    </section> 
-                    
+                    </section>   
+                
                 </section>        
             ))} 
             </div>       
