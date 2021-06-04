@@ -18,7 +18,7 @@ class Bodyhome extends React.Component{
         return(
             <div className="body">
                 <div className="bg-img">
-                    <Slideshow image={images} image1={images1} image2={images2}/>
+                    <Slideshow image={images} image1={images1} image2={images2} time="10s"/>
                 </div>   
                 <div className="message">
                     <p>
@@ -33,13 +33,13 @@ class Bodyhome extends React.Component{
                     <div className="heading">
                         <b>Men Shirts 50% off!</b>
                     </div>
-                    <Slideshow image={image} image1={image} image2={image} /> 
+                    <Slideshow image={image} image1={image} image2={image} time="15s"/> 
                 </div>
                 <div className="sliders">
                     <div className="heading">
                         <b>Women Clothings 50% off!</b>
                     </div>
-                    <Slideshow image={image1} image1={image1} image2={image1} /> 
+                    <Slideshow image={image1} image1={image1} image2={image1} time="10s"/> 
                 </div>
                 <div className="footer">
                     <Footer/>

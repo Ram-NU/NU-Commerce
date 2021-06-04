@@ -17,10 +17,11 @@
 }  
         
 .container div{
-    display: inline flow-root list-item;
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
     justify-content: center;
     grid-gap: 50px;
-    overflow: hidden;
+    
 }    
 
 p{

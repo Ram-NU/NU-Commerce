@@ -9,9 +9,9 @@ const al=(caty)=>{
 class CardView extends React.Component {        
     render(){
         return(
-            <React.Fragment>
+            <div>
             {Categories.map((items)=>(
-                <div className="card-container">                    
+                <section className="card-container">                    
                     
                     <section className="card-title">
                         {items.category}
@@ -23,9 +23,9 @@ class CardView extends React.Component {
                         <button onClick={()=>al(items.category)}>View</button>
                     </section>   
                 
-                </div>        
+                </section>        
             ))} 
-            </React.Fragment>       
+            </div>       
         );
     }      
 } 

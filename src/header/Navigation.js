@@ -1,7 +1,7 @@
 import React from 'react';
 import './Navigation.css';
-import Logo from 'C:/react/NU-Commerce/src/logo.svg';
-import Cart from 'C:/react/NU-Commerce/src/header/cart.png';
+import Logo from '../logo.svg';
+import Cart from './cart.png';
 
 const rs=()=>{
      alert("Hai!");

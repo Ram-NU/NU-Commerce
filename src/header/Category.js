@@ -3,7 +3,7 @@ import './Category.css';
 import Categories from './Data.js';
 
 const al=()=>{
-    alert("NU!");
+    //alert("NU!");
 }    
   
 class Category extends React.Component {
