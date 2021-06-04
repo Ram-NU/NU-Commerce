@@ -11,7 +11,7 @@ class CardView extends React.Component {
         return(
             <div>
             {Categories.map((items)=>(
-                <section className="card-container">                    
+                <div className="card-container">                    
                     
                     <section className="card-title">
                         {items.category}
@@ -23,7 +23,7 @@ class CardView extends React.Component {
                         <button onClick={()=>al(items.category)}>View</button>
                     </section>   
                 
-                </section>        
+                </div>        
             ))} 
             </div>       
         );
