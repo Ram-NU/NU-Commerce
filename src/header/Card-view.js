@@ -11,7 +11,7 @@ class CardView extends React.Component {
         return(
             <div>
             {Categories.map((items)=>(
-                <section className="inline flow-root list-item card-container">                    
+                <section className="card-container">                    
                     
                     <section className="card-title">
                         {items.category}
