@@ -21,6 +21,7 @@
     grid-template-columns: 300px 300px 300px;
     justify-content: center;
     grid-gap: 50px;
+    overflow: hidden;
 }    
 
 p{
@@ -28,7 +29,7 @@ p{
 }  
 
 .body{
-    height: 2780px;
+   
     background-color:#E8A798;
 }    
 
@@ -50,6 +51,7 @@ p{
     font-weight: bolder;
     color:black;
     font-size: 25px;
+    margin-bottom: 20px;
 }    
 
 .footer{
@@ -57,3 +59,4 @@ p{
     height: 250px;
     background-color: #0072B5;
 }    
+   

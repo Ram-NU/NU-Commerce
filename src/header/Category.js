@@ -10,7 +10,7 @@ class Category extends React.Component {
     render(){
         return(
 
-            <div className="category">
+            <div className="d-flex justify-content-around category">
                 
                 {Categories.map((items)=>(
                     <div className="inner-offer" onMouseEnter={al}>

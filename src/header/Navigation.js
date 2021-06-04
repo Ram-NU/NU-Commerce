@@ -7,7 +7,7 @@ const rs=()=>{
      alert("Hai!");
 }    
 
-class navigation extends React.Component{
+class Navigation extends React.Component{
     render(){
         return(
             
@@ -23,4 +23,4 @@ class navigation extends React.Component{
         );
         }  
     } 
-export default navigation  
+export default Navigation  
