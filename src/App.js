@@ -1,14 +1,10 @@
 import './App.css';
-import Navigation from './header/Navigation.js'
-import Category from './header/Category.js';
-import Bodyhome from './header/Bodyhome.js';
+import Homepage from './header/Homepage.js';
 
 function App() {
   return (
     <div className="App">
-      <Navigation/>
-      <Category/>
-      <Bodyhome/>
+        <Homepage/>
     </div>
   );
 }

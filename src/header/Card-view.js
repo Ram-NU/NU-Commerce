@@ -10,8 +10,8 @@ class CardView extends React.Component {
     render(){
         return(
             <div>
-            {Categories.map((items)=>(
-                <section className="card-container">                    
+            {Categories.map((items,index)=>(
+                <section className="card-container" key={index}>                    
                     
                     <section className="card-title">
                         {items.category}
