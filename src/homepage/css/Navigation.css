@@ -3,7 +3,7 @@
     flex-direction: row;
     background-color: #0072B5;
     height: 70px;
-    width: auto;
+    width: 100%;
 } 
 
 .nav-text {
@@ -76,6 +76,8 @@
     margin-left: 100px;
     border-radius: 5px;
     background-color: yellow;
+    color:black;
+    font-weight: bold;
 }   
 
 .cart-b{

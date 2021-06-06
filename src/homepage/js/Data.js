@@ -1,12 +1,12 @@
-import electronics from '../header/electronics.jpg';
-import books from '../header/books.jpg';
-import eyeglasses from '../header/eyeglasses.jpg';
-import men from '../header/men.jpg';
-import women from '../header/women.jpg';
-import groceries from '../header/groceries.jpg';
-import offer from '../header/offer.jpg';
-import medicines from '../header/medicines.jpg';
-import bags from '../header/bags.jpg';
+import electronics from '../img/electronics.jpg';
+import books from '../img/books.jpg';
+import eyeglasses from '../img/eyeglasses.jpg';
+import men from '../img/men.jpg';
+import women from '../img/women.jpg';
+import groceries from '../img/groceries.jpg';
+import offer from '../img/offer.jpg';
+import medicines from '../img/medicines.jpg';
+import bags from '../img/bags.jpg';
 
 const Categories=[
     {
@@ -18,6 +18,7 @@ const Categories=[
         category:'Electronics',
         image: electronics
     },
+    
     {
         category:'Books',
         image: books

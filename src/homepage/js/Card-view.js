@@ -1,13 +1,16 @@
 import React from 'react';
-import './Card-view.css';
-import Categories from './Data.js';
+import '../css/Card-view.css';
+//import Categories from './Data.js';
 
 const al=(caty)=>{
     alert(caty);
 }    
 
-class CardView extends React.Component {        
+
+class CardView extends React.Component {  
+       
     render(){
+        const Categories= this.props.data;
         return(
             <div>
             {Categories.map((items,index)=>(

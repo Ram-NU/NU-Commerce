@@ -1,8 +1,7 @@
 import React from 'react';
-import Navigation from './Navigation.js';
-import Category from './Category.js';
-import Bodyhome from './Bodyhome.js';
-
+import Navigation from '../js/Navigation.js';
+import Category from '../js/Category.js';
+import Bodyhome from '../js/Bodyhome.js';
 
 class Homepage extends React.Component{
     render(){

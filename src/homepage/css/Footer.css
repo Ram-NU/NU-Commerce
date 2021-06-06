@@ -1,0 +1,19 @@
+.address {
+    height:100px;
+    justify-content: center;
+}      
+
+.position{
+    justify-content: center;
+}    
+
+.position b{
+    font-size: 15px;
+    color:black;
+}    
+
+.footer {
+    margin-top: 50px;
+    height: 250px;
+    background-color: #0072B5;
+}  

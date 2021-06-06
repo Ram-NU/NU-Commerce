@@ -18,8 +18,9 @@
     flex-direction: column;
 }
 
-b{
+.category b{
     margin-top: 20px;
     margin-left: 80px;
+    font-size: 15px;
     color:white;
 }    

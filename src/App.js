@@ -1,10 +1,11 @@
 import './App.css';
-import Homepage from './header/Homepage.js';
+import Homepage from './homepage/js/Homepage.js';
+import List from './product_listing_page/js/List.js';
 
 function App() {
   return (
     <div className="App">
-        <Homepage/>
+        <List/>
     </div>
   );
 }

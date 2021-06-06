@@ -1,13 +1,14 @@
 import React from 'react';
-import './Body_home.css';
-import CardView from './Card-view.js'; 
-import Slideshow from './Slideshow.js';
-import image from './slider.jpg';
-import image1 from './slider1.jpg';
-import Footer from './Footer.js';
-import images from './main-background.jpg';
-import images1 from './main-background1.jpg';
-import images2 from './main-background2.jpg';
+import '../css/Body_home.css';
+import CardView from '../js/Card-view.js'; 
+import Slideshow from '../js/Slideshow.js';
+import image from '../img/slider.jpg';
+import image1 from '../img/slider1.jpg';
+import Footer from '../js/Footer.js';
+import images from '../img/main-background.jpg';
+import images1 from '../img/main-background1.jpg';
+import images2 from '../img/main-background2.jpg';
+import Category from './Data.js';
 
    
 
@@ -27,7 +28,7 @@ class Bodyhome extends React.Component{
                     </p>
                 </div>    
                 <div className="container">
-                   <CardView/>
+                   <CardView data={Category}/>
                 </div>
                 <div className="sliders">
                     <div className="heading">

@@ -1,0 +1,67 @@
+.bg-img{
+    height:250px;
+    width:100%;
+} 
+
+.message{
+    height:40px;
+    margin-left: 5%;
+    margin-top:50px;
+    width: 90%;
+    justify-content: center;
+    border:none;
+    background-color: grey;
+    overflow: hidden;
+} 
+
+.message p{
+    font-size: 15px;
+    font-weight:bold;
+    color: black;
+}    
+ 
+.message a{
+    font-size: 15px;
+    font-weight:bolder;
+    color: #0072B5;
+}
+
+.container div{
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    justify-content: center;
+    grid-column-gap: 50px;
+}    
+
+p{
+    margin-top:10px;
+}  
+
+.body{
+   
+    background-color:#E8A798;
+}    
+
+.sliders{
+    background-color: white;
+    height: 300px;
+    margin-left: 2%;
+    width: 96%;
+}   
+
+.heading{
+    height:40px;
+    margin-top:50px;
+    background-color: #FFA500;
+}    
+
+.heading b{
+    vertical-align: middle;
+    font-weight: bold;
+    color:black;
+    font-size: 25px;
+    margin-bottom: 20px;
+}    
+
+
+   
