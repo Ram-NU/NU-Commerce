@@ -5,7 +5,7 @@ import List from './product_listing_page/js/List.js';
 function App() {
   return (
     <div className="App">
-        <List/>
+        <Homepage/>
     </div>
   );
 }
