@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/NU-Commerce/static/css/main.bbc884d1.chunk.css",
-    "main.js": "/NU-Commerce/static/js/main.4df565ae.chunk.js",
-    "main.js.map": "/NU-Commerce/static/js/main.4df565ae.chunk.js.map",
+    "main.js": "/NU-Commerce/static/js/main.0790f1d9.chunk.js",
+    "main.js.map": "/NU-Commerce/static/js/main.0790f1d9.chunk.js.map",
     "runtime-main.js": "/NU-Commerce/static/js/runtime-main.9b75094b.js",
     "runtime-main.js.map": "/NU-Commerce/static/js/runtime-main.9b75094b.js.map",
     "static/js/2.b9b93b54.chunk.js": "/NU-Commerce/static/js/2.b9b93b54.chunk.js",
@@ -28,6 +28,6 @@
     "static/js/runtime-main.9b75094b.js",
     "static/js/2.b9b93b54.chunk.js",
     "static/css/main.bbc884d1.chunk.css",
-    "static/js/main.4df565ae.chunk.js"
+    "static/js/main.0790f1d9.chunk.js"
   ]
 }
