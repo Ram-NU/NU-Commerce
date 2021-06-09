@@ -28,7 +28,7 @@ class Bodyhome extends React.Component{
                     </p>
                 </div>    
                 <div className="container">
-                   <CardView data={Category}/>
+                   <CardView data={Category} />
                 </div>
                 <div className="sliders">
                     <div className="heading">

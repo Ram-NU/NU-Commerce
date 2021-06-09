@@ -29,9 +29,26 @@
 .container div{
     display: grid;
     grid-template-columns: 300px 300px 300px;
-    justify-content: center;
+    justify-content: space-between;
     grid-column-gap: 50px;
-}    
+} 
+
+
+@media (max-width: 500px){
+.container div{
+    display: grid;
+    grid-template-columns: 70%;
+    justify-content: center;
+} 
+
+.message{
+    visibility: hidden;
+    margin-top: 0px;
+    height: 0px;
+}  
+   
+}
+
 
 p{
     margin-top:10px;
@@ -47,7 +64,21 @@ p{
     height: 300px;
     margin-left: 2%;
     width: 96%;
-}   
+}  
+
+@media (max-width: 500px){
+.sliders{
+    background-color: white;
+    height: 100px;
+    margin-left: 2%;
+    width: 96%;
+} 
+.bg-img{
+    height:50px;
+    width:100%;
+}
+} 
+
 
 .heading{
     height:40px;

@@ -11,41 +11,50 @@ import bags from 'C:/react/NU-Commerce/src/homepage/img/electronics.jpg';
 const Categories=[
     {
         category:'Redmi Note 10',
-        image: offer
+        image: offer,
+        price:"20000rs"
     },
 
     {
         category:'Electronics',
-        image: electronics
+        image: electronics,
+        price:"20000rs"
     },
     
     {
         category:'Books',
-        image: books
+        image: books,
+        price:"20000rs"
     },
     {
         category:'Men',
-        image: men
+        image: men,
+        price:"20000rs"
     },
     {
         category:'Women',
-        image: women
+        image: women,
+        price:"20000rs"
     },
     {
         category:'Eye Glasses',
-        image: eyeglasses
+        image: eyeglasses,
+        price:"20000rs"
     },
     {
         category:'Groceries',
-        image: groceries
+        image: groceries,
+        price:"20000rs"
     },
     {
         category:'Medicines',
-        image: medicines
+        image: medicines,
+        price:"20000rs"
     },
     {
         category:'Bags',
-        image: bags
+        image: bags,
+        price:"20000rs"
     }
     
 ] ;

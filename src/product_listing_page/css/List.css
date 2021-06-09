@@ -5,24 +5,92 @@
 
 .filter{
     background-color: #F5DF4D;
-    width: 20%;
-}   
+    margin-right: 10%;
+    height: 40%;
+    justify-content: left;
+} 
 
-.body{
+.filter b{
+    color: black;
+    font-size: 20px;
+}    
+  
+
+.body {
     background-color: pink;
     font-weight: bolder;
     color: black;
-    font-size: 20px;
+    font-size: 15px;
 }   
 
 .card div{
     display: grid;
     grid-template-columns: 25% 25% 25%;
     grid-column-gap: 5%;
-    margin-left: 25%;
 } 
+
+.amount{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}    
+
+.amount input{
+    width: 20%;
+}    
+
+
+
+@media (max-width: 500px){
+.card div{
+    display: grid;
+    margin-left: 10%;
+    grid-template-columns: 75%;
+    grid-column-gap: 10%;
+} 
+.filter{
+    height:12%
+}  
+.filter b{
+    font-size: 15px;
+}  
+.amount{
+    display: flex;
+    flex-direction: column;   
+}   
+.amount input{
+    width: 60%;
+    margin-left: 20%;
+}   
+
+}
+
+.color b{
+    color: blue;
+}    
+
+.card b{
+   margin-right: 22%;
+   font-size: 25px;
+}    
 
 .fil-ops{
     font-size: 10px;
     justify-content: left;
+}    
+
+.content{
+    display: grid;
+    grid-template-columns: 25% 75%;
+
+} 
+
+.fil-elt label{
+    margin-top: 5px;
+    font-size: 15px;
+    color: green;
+} 
+
+.fil-elt b{
+    color:blue;
 }    

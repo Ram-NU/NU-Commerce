@@ -1,13 +1,13 @@
 import React from 'react';
 import '../css/Card-view.css';
-//import Categories from './Data.js';
+//import {useHistory} from 'react-router-dom'; 
 
-const al=(caty)=>{
+ const al=(caty)=>{
     alert(caty);
-}    
+  }  
 
 
-class CardView extends React.Component {  
+class CardView extends React.Component { 
        
     render(){
         const Categories= this.props.data;
@@ -23,7 +23,7 @@ class CardView extends React.Component {
                         <img src={items.image} alt="card-img"/>          
                     </section>
                     <section className="card-button">
-                        <button onClick={()=>al(items.category)}>View</button>
+                        <button onClick={()=>al(items.category)}>view</button>
                     </section>   
                 
                 </section>        

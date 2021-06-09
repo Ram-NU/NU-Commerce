@@ -1,9 +1,11 @@
 .category{
     display:flex;
-    height:70px;
+    height:7rem;
     background-color: #0072B5;
     flex-direction: row;
     width:auto;
+    justify-content: space-around;
+    vertical-align: middle;
 }
 
 .list-image{
@@ -20,7 +22,8 @@
 
 .category b{
     margin-top: 20px;
-    margin-left: 80px;
-    font-size: 15px;
+   
+    font-size: 1.2vw;
+    font-weight: 500;
     color:white;
 }    
