@@ -32,6 +32,8 @@ function App(){
       <Switch>
         
           <Route path="/" component={homepage} exact={true}/>
+          <Route path="https://ram-nu.github.io/NU-Commerce/" component={homepage} exact={true}/>
+          <Route path="https://ram-nu.github.io/NU-Commerce/list" component={homepage} exact={true}/>
           <Route path="/list" component={list} exact={true}/>
           <Route path="/list/:id" component={list} exact={true}/>
           <Route component={notFound}/>
