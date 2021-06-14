@@ -13,6 +13,7 @@ import Category from './Data.js';
    
 
 const url="https://nutechnologyinc.com";
+ 
 
 class Bodyhome extends React.Component{
     render(){

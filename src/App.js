@@ -2,6 +2,7 @@ import './App.css';
 import Homepage from './homepage/js/Homepage.js';
 import {BrowserRouter,Route,Switch} from 'react-router-dom';
 import List from './product_listing_page/js/List.js';
+import Productdetail from '../src/product_listing_page/Product_detail.js'
 
 
 function homepage(){
@@ -15,6 +16,12 @@ function list(){
     <div><List/></div>
   );
 } 
+
+function details(){
+  return(
+    <div><Productdetail/></div>
+  );
+}
 
 function notFound(){
   return(
@@ -32,10 +39,9 @@ function App(){
       <Switch>
         
           <Route path="/" component={homepage} exact={true}/>
-          <Route path="https://ram-nu.github.io/NU-Commerce/" component={homepage} exact={true}/>
-          <Route path="https://ram-nu.github.io/NU-Commerce/list" component={homepage} exact={true}/>
           <Route path="/list" component={list} exact={true}/>
           <Route path="/list/:id" component={list} exact={true}/>
+          <Route path="/prod" component={details} exact={true}/>
           <Route component={notFound}/>
        
         </Switch>  

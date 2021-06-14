@@ -1,0 +1,104 @@
+.prod_list{
+ margin-top: 4%;
+ background-color: white;  
+ width: 80%; 
+ margin-left: 10%;
+}
+
+.prod_list b{
+    color:black;
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+.prod{
+    background-color: pink;
+}    
+
+.details{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.image{
+    margin-top:10%;
+    margin-bottom: 10%;
+}   
+   
+.image img{
+    width:80%;
+    height:100%;
+}  
+
+.det{
+    margin-top:10%;
+    margin-bottom: 10%;
+    text-align: left;
+}
+
+.det b{
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif;
+} 
+
+.specs {
+    font-size: 15px;
+    font-weight: 600;
+} 
+
+.det button{
+    color:black;
+    font-weight: 600;
+    background-color: #FF9900;
+    margin-left: 5%;
+    margin-right: 20%;
+    height:10%;
+    width: 20%;
+    border: none;
+}
+
+.others div{
+    margin-left: 15%;
+    display:grid;
+    grid-template-columns: 25% 25% 25%;
+    grid-column-gap: 5%;
+}        
+
+.others b{
+    font-size: 25px;
+    font-weight: bold;
+}   
+
+@media (max-width: 500px){
+    .det b{
+        font-size: 10px;
+    } 
+
+    .others div{
+        margin-left: 15%;
+        display:grid;
+        grid-template-columns: 250px;
+        grid-column-gap: 5%;
+    }   
+    
+    .det button{
+        font-size: 10px;
+        font-weight: bold;
+        height:25px;
+        width: 80px;
+        margin-top: 10px;
+    }
+    
+    .specs{
+        font-size: 10px;
+    }  
+    
+    .image img{
+        width:80%;
+        height:50%;
+    }  
+}    
+
+

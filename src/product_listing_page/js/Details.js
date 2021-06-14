@@ -1,62 +1,65 @@
-import electronics from 'C:/react/NU-Commerce/src/homepage/img/electronics.jpg';
-import books from 'C:/react/NU-Commerce/src/homepage/img/electronics.jpg';
-import eyeglasses from 'C:/react/NU-Commerce/src/homepage/img/electronics.jpg';
-import men from 'C:/react/NU-Commerce/src/homepage/img/electronics.jpg';
-import women from 'C:/react/NU-Commerce/src/homepage/img/electronics.jpg';
-import groceries from 'C:/react/NU-Commerce/src/homepage/img/electronics.jpg';
-import offer from 'C:/react/NU-Commerce/src/homepage/img/electronics.jpg';
-import medicines from 'C:/react/NU-Commerce/src/homepage/img/electronics.jpg';
-import bags from 'C:/react/NU-Commerce/src/homepage/img/electronics.jpg';
+import vivo from '../img/vivo_v15.jpg';
+import sdcard from '../img/sd_card.jpg';
+import mi_tv from '../img/mi_tv.jpg';
+import joystick from '../img/joystick.jpg';
+import ps4 from '../img/ps4.jpg';
+import iphone_5s from '../img/iphone_5s.jpg';
+import mi_powerbank from '../img/mi_powerbank.jpg';
+import jbl_headphone from '../img/jbl_headphone.jpg';
+import redmi from '../img/redmi_note_10.jpg';
 
 const Categories=[
     {
         category:'Redmi Note 10',
-        image: offer,
+        image: redmi,
         price:"20000rs"
     },
 
     {
-        category:'Electronics',
-        image: electronics,
+        category:'Vivo V15',
+        image: vivo,
         price:"20000rs"
     },
     
     {
-        category:'Books',
-        image: books,
+        category:'Sd Pendrive',
+        image: sdcard,
         price:"20000rs"
     },
     {
-        category:'Men',
-        image: men,
+        category:'Joystick',
+        image: joystick,
         price:"20000rs"
     },
     {
-        category:'Women',
-        image: women,
+        category:'PS4',
+        image: ps4,
         price:"20000rs"
     },
     {
-        category:'Eye Glasses',
-        image: eyeglasses,
+        category:'Mi Tv 80 inch',
+        image: mi_tv,
         price:"20000rs"
     },
     {
-        category:'Groceries',
-        image: groceries,
+        category:'Apple Iphone 5s',
+        image: iphone_5s,
         price:"20000rs"
     },
     {
-        category:'Medicines',
-        image: medicines,
+        category:'Mi power bank',
+        image: mi_powerbank,
         price:"20000rs"
     },
     {
-        category:'Bags',
-        image: bags,
+        category:'JBL Headphones',
+        image: jbl_headphone,
         price:"20000rs"
     }
     
 ] ;
 
-export default Categories; 
+
+
+
+export default Categories;
