@@ -1,20 +1,24 @@
 import React from 'react';
 import '../css/Card-view.css';
-//import {useHistory} from 'react-router-dom'; 
+import {useHistory} from 'react-router-dom'; 
 
- const al=(caty)=>{
-    alert(caty);
-  }  
+ 
 
 
-class CardView extends React.Component { 
+function CardView(props){ 
+
+    var types=props.type
+    var hist=useHistory();
+
+    function Al(caty){
+        types==="product"?hist.push('/prod'):hist.push('/list/'+caty);
+      }  
        
-    render(){
-        const Categories= this.props.data;
+        const Categories= props.data;
         return(
             <div>
             {Categories.map((items,index)=>(
-                <section className="card-container" key={index}>                    
+                <section className="card-container" key={index} onClick={()=>{Al(items.category)}}>                    
                     
                     <section className="card-title">
                         {items.category}
@@ -23,7 +27,7 @@ class CardView extends React.Component {
                         <img src={items.image} alt="card-img"/>          
                     </section>
                     <section className="card-button">
-                        <button onClick={()=>al(items.category)}>view</button>
+                    {items.price ?<h3>Price: {items.price}</h3> :<button onClick={()=>Al(items.category)}>view</button>}
                     </section>   
                 
                 </section>        
@@ -31,6 +35,5 @@ class CardView extends React.Component {
             </div>       
         );
     }      
-} 
 
 export default CardView

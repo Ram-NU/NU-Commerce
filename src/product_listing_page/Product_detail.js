@@ -47,7 +47,7 @@ class Productdetail extends Component {
 
                 <div className="others">
                     <b>Related Products:</b>
-                    <CardView data={Details} />
+                    <CardView data={Details.electronics} type="product"/>
                 </div>
                 <Footer/>
             </div>

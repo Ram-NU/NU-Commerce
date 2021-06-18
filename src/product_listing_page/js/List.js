@@ -48,7 +48,7 @@ class List extends React.Component {
                         </div>
                         <div className="card">
                         <b>Top Search Results: Electronics</b>
-                            <Cardview data={Data} />
+                            <Cardview data={Data.electronics} type="product"/>
                         </div>
                     </div>
                     <Footer/>

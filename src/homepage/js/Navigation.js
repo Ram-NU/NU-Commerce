@@ -2,35 +2,40 @@ import React from 'react';
 import '../css/Navigation.css';
 import Logo from '../img/logo.svg';
 import Cart from '../img/cart.png';
+import { useHistory } from 'react-router-dom';
 
-const rs=()=>{
-     alert("Hai!");
+const rs=(type)=>{
+     alert(type);
 }    
 
 
-class Navigation extends React.Component{
+function Navigation(){
 
-    render(){
+        var hist=useHistory();
+        const route=()=>{
+            hist.push('/');
+        }    
+    
         return(
             
             <div className="nav-bar">
                
-                <img src={Logo} alt="Hai!" className="logo-size"/>  
-                <b className="nav-text">NU Cart</b>
+                <img src={Logo} alt="Hai!" className="logo-size" onClick={route}/>  
+                <b className="nav-text" onClick={route}>NU Cart</b>
 
-                <div className="searcing">
+                <div className="searching">
                     <input type="text" className="search"/>
-                    <button onClick={rs} className="button-nav">Search</button>
+                    <button onClick={()=>rs("search")} className="button-nav">Search</button>
                 </div>
-                <button onClick={rs} className="login-nav">LOGIN</button>
+                <button onClick={()=>rs("login")} className="login-nav">LOGIN</button>
                 <div className="cart-all"> 
-                    <button onClick={rs} className="cart-nav">
+                    <button onClick={()=>rs("cart")} className="cart-nav">
                         Cart
                         <img className="cart-logo" alt="logo" src={Cart}/>
                     </button>
                 </div>
             </div>
         );
-        }  
-    } 
+        
+} 
 export default Navigation  

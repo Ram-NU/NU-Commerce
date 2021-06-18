@@ -1,13 +1,18 @@
 import React from 'react';
 import '../css/Category.css';
 import Categories from './Data.js';
+import {useHistory} from 'react-router-dom';
 
-const al=(caty)=>{
-    alert(caty);
-}    
+    
   
-class Category extends React.Component {
-    render(){
+function Category() {
+
+    var hist=useHistory();
+
+    const al=(caty)=>{
+        hist.push('/list/'+caty);
+    }
+  
         return(
 
             <div className="category">
@@ -22,7 +27,6 @@ class Category extends React.Component {
            
 
         );
-    }
 }
 
 export default Category

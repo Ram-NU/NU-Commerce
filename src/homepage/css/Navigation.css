@@ -6,6 +6,10 @@
     width: 100%;
 } 
 
+.nav-bar b{
+    cursor:pointer;
+}    
+
 .nav-text {
     margin-top: 25px;
     margin-left:20px;
@@ -13,6 +17,10 @@
     color: black;
     font-size: 25px;
     font-family: 'Lucida Sans';
+}    
+
+.nav-bar img{
+    cursor:pointer;
 }    
 
 .logo-size {

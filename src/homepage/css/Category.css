@@ -18,6 +18,7 @@
 .inner-offer{
     display: flex;
     flex-direction: column;
+    cursor: pointer;
 }
 
 .category b{
