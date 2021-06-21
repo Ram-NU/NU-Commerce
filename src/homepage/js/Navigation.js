@@ -12,9 +12,20 @@ const rs=(type)=>{
 function Navigation(){
 
         var hist=useHistory();
-        const route=()=>{
-            hist.push('/');
-        }    
+        
+        const route=(type)=>{
+            switch(type){
+                case "cart":
+                    hist.push('/cart')
+                    break
+                case "login": 
+                    hist.push('/login')
+                    break  
+                default:  
+                    hist.push('/')   
+            }    
+        } 
+        
     
         return(
             
@@ -27,9 +38,9 @@ function Navigation(){
                     <input type="text" className="search"/>
                     <button onClick={()=>rs("search")} className="button-nav">Search</button>
                 </div>
-                <button onClick={()=>rs("login")} className="login-nav">LOGIN</button>
+                <button onClick={()=>route("login")} className="login-nav">LOGIN</button>
                 <div className="cart-all"> 
-                    <button onClick={()=>rs("cart")} className="cart-nav">
+                    <button onClick={()=>route("cart")} className="cart-nav">
                         Cart
                         <img className="cart-logo" alt="logo" src={Cart}/>
                     </button>

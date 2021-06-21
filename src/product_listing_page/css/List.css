@@ -25,7 +25,7 @@
 
 .card div{
     display: grid;
-    grid-template-columns: 25% 25% 25%;
+    grid-template-columns: 28% 28% 28%;
     grid-column-gap: 5%;
 } 
 

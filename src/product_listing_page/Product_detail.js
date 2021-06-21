@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component} from 'react';
 import Navigation from '../homepage/js/Navigation';
 import Category from '../homepage/js/Category';
 import Footer from '../homepage/js/Footer';
@@ -11,7 +11,8 @@ import CardView from '../homepage/js/Card-view';
 
 const buttons=(opt)=>{
     alert(opt);
-}    
+}   
+    
 
 class Productdetail extends Component {
     render() {
@@ -38,7 +39,7 @@ class Productdetail extends Component {
                                  <p><b>About: </b>{redmii.spec1}</p>
                             </div>
                             <br/>
-                            <button onClick={()=>{buttons("Add to cart")}}>Add to cart</button>
+                            <button onClick={()=>{buttons("Added to Cart")}}>Add to cart</button>
                             <button onClick={()=>{buttons("Buy")}}>Buy</button>
                         </div> 
                     </div>  
