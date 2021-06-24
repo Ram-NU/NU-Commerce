@@ -7,12 +7,25 @@ import redmi from './img/redmi_note_10.jpg'
 import redmii from './js/Redmii.js';
 import Details from './js/Details'
 import CardView from '../homepage/js/Card-view';
+import {store} from '../Redux/Cart-Redux';
 
 
 const buttons=(opt)=>{
     alert(opt);
 }   
     
+const cart=(product,price,redmi)=>{
+    buttons(product+" is added to cart")
+    store.dispatch({
+        type:'ADD',
+        payload:{
+            product:product,
+            price:price,
+            img:redmi
+        }    
+    })
+}    
+
 
 class Productdetail extends Component {
     render() {
@@ -39,7 +52,7 @@ class Productdetail extends Component {
                                  <p><b>About: </b>{redmii.spec1}</p>
                             </div>
                             <br/>
-                            <button onClick={()=>{buttons("Added to Cart")}}>Add to cart</button>
+                            <button onClick={()=>{cart(redmii.product,redmii.price,redmi)}}>Add to cart</button>
                             <button onClick={()=>{buttons("Buy")}}>Buy</button>
                         </div> 
                     </div>  

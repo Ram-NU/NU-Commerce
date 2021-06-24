@@ -9,53 +9,53 @@ import jbl_headphone from '../img/jbl_headphone.jpg';
 import redmi from '../img/redmi_note_10.jpg';
 
 const Categories={
-    "electronics":[
+    electronics:[
         {
             category:'Redmi Note 10',
             image: redmi,
-            price:"₹20000"
+            price:20000
         },
 
         {
             category:'Vivo V15',
             image: vivo,
-            price:"₹25000"
+            price:25000
         },
         
         {
             category:'Sd Pendrive',
             image: sdcard,
-            price:"₹450"
+            price:450
         },
         {
             category:'Joystick',
             image: joystick,
-            price:"₹2000"
+            price:2000
         },
         {
             category:'PS4',
             image: ps4,
-            price:"₹20000"
+            price:20000
         },
         {
             category:'Mi Tv 80 inch',
             image: mi_tv,
-            price:"₹40000"
+            price:40000
         },
         {
             category:'Apple Iphone 5s',
             image: iphone_5s,
-            price:"₹28000"
+            price:28000
         },
         {
             category:'Mi power bank',
             image: mi_powerbank,
-            price:"₹600"
+            price:600
         },
         {
             category:'JBL Headphones',
             image: jbl_headphone,
-            price:"₹4500"
+            price:4500
         }
         
     ] 

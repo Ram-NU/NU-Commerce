@@ -5,6 +5,7 @@ import List from './product_listing_page/js/List';
 import Productdetail from '../src/product_listing_page/Product_detail';
 import Login from './Login/Login';
 import Cart from './Shopping Cart/Cart'
+import {store} from './Redux/Cart-Redux';
 
 const homepage=()=>{
   return(
@@ -38,7 +39,7 @@ const login=()=>{
 
 const cart=()=>{
   return(
-    <div><Cart/></div>
+    <div><Cart store={store}/></div>
   );
 }  
 

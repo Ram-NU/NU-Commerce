@@ -2,8 +2,7 @@ import React from 'react';
 import '../css/Card-view.css';
 import {useHistory} from 'react-router-dom'; 
 
- 
-
+   
 
 function CardView(props){ 
 
@@ -27,7 +26,7 @@ function CardView(props){
                         <img src={items.image} alt="card-img"/>          
                     </section>
                     <section className="card-button">
-                    {items.price ?<h3>Price: {items.price}</h3> :<button onClick={()=>Al(items.category)}>view</button>}
+                    {items.price ?<h3>Price: ₹{items.price}</h3> :<button onClick={()=>Al(items.category)}>view</button>}
                     </section>   
                 
                 </section>        
