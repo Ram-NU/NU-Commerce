@@ -10,10 +10,10 @@ class Footer extends React.Component{
                 <div className="address">
                     <div className="position">
                        <b> Address:<br/>
-                            56/45 fort street, <br/>
-                            Velacherry cross road, <br/>
-                            Guindy, <br/>
-                            Chennai-600045.<br/>
+                            46/23 TVKS Street, <br/>
+                            Near new bus-stand, <br/>
+                            Rasipuram, <br/>
+                            Namakkal-637408.<br/>
                             E-mail: vickyram2802@gmail.com</b>
                     </div> 
                 </div>     

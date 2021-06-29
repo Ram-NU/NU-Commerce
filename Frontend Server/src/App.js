@@ -5,7 +5,8 @@ import List from './product_listing_page/js/List';
 import Productdetail from '../src/product_listing_page/Product_detail';
 import Login from './Login/Login';
 import Cart from './Shopping Cart/Cart'
-import {store} from './Redux/Cart-Redux';
+import {store} from './Redux/Redux';
+import Payment from './Payment/Payment'
 
 const homepage=()=>{
   return(
@@ -33,7 +34,7 @@ const notFound=()=>{
 
 const login=()=>{
   return(
-    <div><Login/></div>
+    <div><Login store={store}/></div>
   );
 }  
 
@@ -42,6 +43,12 @@ const cart=()=>{
     <div><Cart store={store}/></div>
   );
 }  
+ 
+const payment=()=>{
+  return(
+    <div><Payment/></div>
+  );
+} 
 
 
 function App(){
@@ -57,6 +64,7 @@ function App(){
           <Route path="/prod" component={details} exact={true}/>
           <Route path="/login" component={login} exact={true}/>
           <Route path="/cart" component={cart} exact={true}/>
+          <Route path="/payment" component={payment} exact={true}/>
           <Route component={notFound}/>
        
         </Switch>  

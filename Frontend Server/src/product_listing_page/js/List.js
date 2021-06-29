@@ -1,8 +1,7 @@
-import Navigation from 'C:/NU/NU-Commerce/src/homepage/js/Navigation.js';
-import Category from 'C:/NU/NU-Commerce/src/homepage/js/Category.js';
-import Cardview from 'C:/NU/NU-Commerce/src/homepage/js/Card-view.js';
-import Footer from 'C:/NU/NU-Commerce/src/homepage/js/Footer.js';
-import 'C:/NU/NU-Commerce/src/homepage/js/Card-view.js';
+import Navigation from 'C:/NU/NU-Commerce/Frontend Server/src/homepage/js/Navigation.js';
+import Category from 'C:/NU/NU-Commerce/Frontend Server/src/homepage/js/Category.js';
+import Cardview from '../js/CardView';
+import Footer from 'C:/NU/NU-Commerce/Frontend Server/src/homepage/js/Footer.js';
 import '../css/List.css';
 import Data from './Details.js'
 import React from 'react';
@@ -10,7 +9,7 @@ import React from 'react';
 
 class List extends React.Component {
 
-   render(){
+    render(){
         return(
             <React.Fragment>
                 <Navigation/>

@@ -7,7 +7,7 @@ import redmi from './img/redmi_note_10.jpg'
 import redmii from './js/Redmii.js';
 import Details from './js/Details'
 import CardView from '../homepage/js/Card-view';
-import {store} from '../Redux/Cart-Redux';
+import {store} from '../Redux/Redux'
 
 
 const buttons=(opt)=>{

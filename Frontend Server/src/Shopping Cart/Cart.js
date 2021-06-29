@@ -3,8 +3,10 @@ import Navigation from '../homepage/js/Navigation';
 import Category from '../homepage/js/Category';
 import Footer from '../homepage/js/Footer' 
 import './Cart.css'
-import {store} from '../Redux/Cart-Redux'
+import {store} from '../Redux/Redux'
 import {connect} from 'react-redux'
+
+
 
 const remove=(product)=>{
     store.dispatch({
@@ -15,8 +17,18 @@ const remove=(product)=>{
     })
 }    
 
-class Cart extends Component {
-    
+const checkout=()=>{
+    if(store.getState().isValid!==true){
+        // Redirects to Login page.
+    }
+    else{
+        // Redirects to Payment page. 
+    }
+}   
+
+
+class Cart extends Component { 
+        
     render() {
         const data=this.props.items
         return (
@@ -29,8 +41,8 @@ class Cart extends Component {
                         {data.map((data,index)=>(
                             <div className="cart-item" key={index}>
                                 <img className="img" src={data.img} alt="img"/>
-                                <span className="cart-item__name">{data.product}</span>
-                                <div className="cart-item__price">₹{data.price}</div>
+                                <span className="cart-item__name">Product: {data.product}</span>
+                                <div className="cart-item__price">Price: ₹{data.price}</div>
                                 <button className="btn btn-danger btn-xs click" onClick={()=>{remove(data.product)}}>Remove</button>
                             
                             </div> 
@@ -38,7 +50,7 @@ class Cart extends Component {
                         {this.props.empty?<div/>:
                         <div className="container checkout">
                             <b>Total: ₹{parseFloat(this.props.total)}
-                            </b> <button className="btn btn-xs click">Checkout</button>
+                            </b> <button onClick={()=>{checkout()}} className="btn btn-xs click">Checkout</button>
                         </div>
                         }       
                     </div>    
@@ -52,6 +64,7 @@ class Cart extends Component {
 
 const mapStateToProps=(state)=>{
     return{
+        ...state,
         items:state.items,
         empty:state.empty,
         total:state.total

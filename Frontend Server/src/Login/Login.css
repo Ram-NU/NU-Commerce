@@ -1,0 +1,29 @@
+.login{
+    width:60%;
+    height:40%;
+    margin-left: 20%;
+    display: flex;
+    flex-direction: column;
+}    
+
+.card1 {
+    background-color: yellowgreen;
+}
+
+.cards{
+    width:40%;
+    height:60%;
+    margin-left: 29%;
+}
+
+.log {
+    background-color: #e7e7e7;
+}    
+
+.Input{
+    font-size:20px;
+}    
+    
+
+
+

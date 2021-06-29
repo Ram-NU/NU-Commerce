@@ -6,8 +6,8 @@
 .filter{
     background-color: #F5DF4D;
     margin-right: 10%;
-    height: 40%;
     justify-content: left;
+    height:450px;
 } 
 
 .filter b{
@@ -49,7 +49,7 @@
     grid-column-gap: 10%;
 } 
 .filter{
-    height:12%
+    height: 40%
 }  
 .filter b{
     font-size: 15px;
