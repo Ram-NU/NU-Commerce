@@ -4,24 +4,26 @@ import {useHistory,useParams} from 'react-router-dom';
 import { getProduct } from 'C:/NU/NU-Commerce/Frontend Server/src/Actions/ProductAction.js';
    
 
-function CardView(props){ 
+function CardView(){ 
 
     const[data,changeData]=useState([{}])
     const {id}=useParams()
 
-    // eslint-disable-next-line
-    useEffect( async()=>{
-       const products=await getProduct(id.toLowerCase())
-        changeData(products)
+    
+    useEffect( ()=>{
+        async function fetchData() {
+            const products=await getProduct(id.toLowerCase())
+            changeData(products)
+        }
+        fetchData()    
      }, [id] );
 
-    var types=props.type
     var hist=useHistory();
 
     function Al(caty){
-        types==="product"?hist.push('/prod'):hist.push('/list/'+caty);
+        hist.push('/prod/'+caty)
       }  
-       
+        //data.sort((a, b) => a.price < b.price ? -1 : (a.price < b.price ? 1 : 0))
         const Categories=  data || [];
         return(
             <div>

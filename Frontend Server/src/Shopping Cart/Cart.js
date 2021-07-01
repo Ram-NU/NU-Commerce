@@ -1,4 +1,5 @@
-import React, { Component} from 'react';
+import React from 'react';
+import {useHistory} from 'react-router-dom'
 import Navigation from '../homepage/js/Navigation';
 import Category from '../homepage/js/Category';
 import Footer from '../homepage/js/Footer' 
@@ -8,57 +9,58 @@ import {connect} from 'react-redux'
 
 
 
-const remove=(product)=>{
+const remove=(product,price)=>{
     store.dispatch({
         type:'REMOVE',
         payload:{
-            product:product
+            product:product,
+            price:price
         }    
     })
 }    
 
-const checkout=()=>{
+const checkout=(hist)=>{
     if(store.getState().isValid!==true){
-        // Redirects to Login page.
+        hist.push('/login')
     }
     else{
-        // Redirects to Payment page. 
+        hist.push('/payment') 
     }
 }   
 
 
-class Cart extends Component { 
+function Cart(props) { 
+
+    const hist=useHistory()
         
-    render() {
-        const data=this.props.items
-        return (
-            <div className="cart">
-                <Navigation/>
-                <Category/>
-                <div>
-                    <div className="cart__body">
-                        {this.props.empty?<b>OOPS! Cart is empty</b>:<b>Shopping cart items:</b>}<br/>
-                        {data.map((data,index)=>(
-                            <div className="cart-item" key={index}>
-                                <img className="img" src={data.img} alt="img"/>
-                                <span className="cart-item__name">Product: {data.product}</span>
-                                <div className="cart-item__price">Price: ₹{data.price}</div>
-                                <button className="btn btn-danger btn-xs click" onClick={()=>{remove(data.product)}}>Remove</button>
-                            
-                            </div> 
-                        ))}
-                        {this.props.empty?<div/>:
-                        <div className="container checkout">
-                            <b>Total: ₹{parseFloat(this.props.total)}
-                            </b> <button onClick={()=>{checkout()}} className="btn btn-xs click">Checkout</button>
-                        </div>
-                        }       
-                    </div>    
-                </div>
-                <Footer/>
+    const data=props.items
+    return (
+        <div className="cart">
+            <Navigation/>
+            <Category/>
+            <div>
+                <div className="cart__body">
+                    {props.empty?<div className="OOPS"><b>OOPS! Cart is empty</b><br/><br/></div>:<b>Shopping cart items:</b>}<br/>
+                    {data.map((data,index)=>(
+                        <div className="cart-item" key={index}>
+                            <img className="img" src={data.img} alt="img"/>
+                            <span className="cart-item__name">Product: {data.product}</span>
+                            <div className="cart-item__price">Price: ₹{data.price}</div>
+                            <button className="btn btn-danger btn-xs click" onClick={()=>{remove(data.product,data.price)}}>Remove</button>
+                        
+                        </div> 
+                    ))}
+                    {props.empty?<div/>:
+                    <div className="container checkout">
+                        <b>Total: ₹{parseFloat(props.total)}
+                        </b> <button onClick={()=>{checkout(hist)}} className="btn btn-xs click">Checkout</button>
+                    </div>
+                    }       
+                </div>    
             </div>
-        );
-    }
+            <Footer/>
+        </div>
+    );
 }
  
 

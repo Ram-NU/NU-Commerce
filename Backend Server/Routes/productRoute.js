@@ -6,8 +6,8 @@ const cors=require('cors')
 
 app.use(cors())
 
-app.post('/product',async(request,response)=>{
-    const product= new ProductModel(request.body)
+app.post('/products',async(request,response)=>{
+    const product= ProductModel.insertMany(request.body)
         console.log(request.body)
     try{
         await product.save()
@@ -18,10 +18,9 @@ app.post('/product',async(request,response)=>{
     }
 })
 
-app.get('/product/:id',async(request,response)=>{
+app.get('/products/:id',async(request,response)=>{
     const data=request.params.id
     const product=await ProductModel.find({type:data})
-        console.log(product)
 
         try{
             response.send(product)
@@ -30,5 +29,18 @@ app.get('/product/:id',async(request,response)=>{
             response.status(500).send(error)
         }
 })
+
+app.get('/product/:id',async(request,response)=>{
+    const data=request.params.id
+    const product=await ProductModel.find({category:data})
+
+        try{
+            response.send(product)
+        }
+        catch(error){
+            response.status(500).send(error)
+        }
+})
+
 
 module.exports= app

@@ -1,17 +1,17 @@
-import React from 'react';
+import React,{useState} from 'react';
 import '../css/Navigation.css';
 import Logo from '../img/logo.svg';
 import Cart from '../img/cart.png';
 import { useHistory } from 'react-router-dom';
 
-const rs=(type)=>{
-     alert(type);
-}    
+//import {setProduct} from 'C:/NU/NU-Commerce/Frontend Server/src/Actions/ProductAction.js'
+   
 
-
-function Navigation(){
+function Navigation(props){
 
         var hist=useHistory();
+
+        const[product,changeProduct]=useState("Error")
         
         const route=(type)=>{
             switch(type){
@@ -19,13 +19,21 @@ function Navigation(){
                     hist.push('/cart')
                     break
                 case "login": 
+                    //setProduct()
                     hist.push('/login')
+                    break 
+                case "search": 
+                    hist.push("/search?product="+product)  
                     break  
                 default:  
                     hist.push('/')   
             }    
         } 
-        
+
+        const changeSearch=(e)=>{
+            changeProduct(e.target.value)
+        }
+
     
         return(
             
@@ -35,10 +43,12 @@ function Navigation(){
                 <b className="nav-text" onClick={route}>NU Cart</b>
 
                 <div className="searching">
-                    <input type="text" className="search"/>
-                    <button onClick={()=>rs("search")} className="button-nav">Search</button>
+                    <input type="text" className="search" onChange={changeSearch}/>
+                    <button onClick={()=>route("search")} className="button-nav">Search</button>
                 </div>
-                <button onClick={()=>route("login")} className="login-nav">LOGIN</button>
+                
+                <button onClick={()=>route("login")} className="login-nav">Profile</button>:
+
                 <div className="cart-all"> 
                     <button onClick={()=>route("cart")} className="cart-nav">
                         Cart
@@ -49,4 +59,5 @@ function Navigation(){
         );
         
 } 
+
 export default Navigation  

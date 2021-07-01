@@ -1,9 +1,11 @@
 import Axios from 'axios';
+import {products} from 'C:/NU/NU-Commerce/Frontend Server/src/product_listing_page/js/Redmii.js'
  
 
-    export const setProduct=(category)=>{
-         const url='http://localhost:5000/product'
-         Axios.post(url,category).then((response)=>{
+    export const setProduct=()=>{
+         const url='http://localhost:5000/products'
+         Axios.post(url,products).then((response)=>{
+             console.log(response.data)
          }).catch((error)=>{
              console.log(error)
          })
@@ -13,9 +15,18 @@ import Axios from 'axios';
 
     export const getProduct=async(types)=>{
       var data=''
-        await Axios.get('http://localhost:5000/product/'+types).then((response)=>{
+        await Axios.get('http://localhost:5000/products/'+types).then((response)=>{
             data=response.data
         }).catch((error)=>{
             console.log(error)})
             return data
     }
+
+    export const getItem=async(item)=>{
+        var data=''
+          await Axios.get('http://localhost:5000/product/'+item).then((response)=>{
+              data=response.data
+          }).catch((error)=>{
+              console.log(error)})
+              return data
+      }

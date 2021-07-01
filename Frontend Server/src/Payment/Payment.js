@@ -1,13 +1,18 @@
-import React, { Component } from 'react';
+import React from 'react';
+import Navigation from '../homepage/js/Navigation';
+import Category from '../homepage/js/Category';
+import Footer from '../homepage/js/Footer';
 
-class Payment extends Component {
-  render() {
-    return (
-      <div>
-        
-      </div>
-    );
-  }
+function Payment() {
+
+  return (
+    <div>
+      <Navigation />
+      <Category />
+      <Footer />
+    </div>
+  );
+
 }
 
 export default Payment;

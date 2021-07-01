@@ -35,9 +35,9 @@ export const changeStatus=(state,status)=>{
     }    
 }
 
-export const valid=(state,valid)=>{
+export const valid=(state,Valid)=>{
     return {
-        ...state,isValid:valid,valid:"Successful!"
+        ...state,isValid:Valid,valid:"Successful!"
     }
 }  
 

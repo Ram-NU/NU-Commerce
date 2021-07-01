@@ -3,9 +3,13 @@ const mongoose = require("mongoose");
 const Schema = new mongoose.Schema({
 
   category:String,
-  image:String,
+  prod:String,
   price:Number,
-  type:String
+  image:String,
+  brand:String,
+  color:[String],
+  spec:String,
+  type:String,
 
 });
 

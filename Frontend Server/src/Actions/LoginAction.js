@@ -16,6 +16,7 @@ export const signup=(mail,password)=>{
       
 }      
 export const login=(mail,password)=>{
+
     const url="http://localhost:5000/login/"+mail+" "+password
     Axios.get(url).then((response)=>{
          const result=response.data
@@ -24,6 +25,10 @@ export const login=(mail,password)=>{
                 store.dispatch({
                     type:"STATUS",
                     payload:"Sucessful!"
+                })
+                store.dispatch({
+                    type:"VALID",
+                    payload:true
                 })
                 break
             case "Failure":

@@ -7,7 +7,7 @@ class Homepage extends React.Component{
     render(){
         return(
             <div>
-                <Navigation/>
+                <Navigation />
                 <Category/>
                 <Bodyhome/>
             </div>

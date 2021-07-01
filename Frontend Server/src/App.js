@@ -10,7 +10,7 @@ import Payment from './Payment/Payment'
 
 const homepage=()=>{
   return(
-    <div><Homepage/></div>
+    <div><Homepage store={store}/></div>
   );
 }
 
@@ -34,13 +34,13 @@ const notFound=()=>{
 
 const login=()=>{
   return(
-    <div><Login store={store}/></div>
+    <div><Login store={store} /></div>
   );
 }  
 
-const cart=()=>{
+const cart=(hist1)=>{
   return(
-    <div><Cart store={store}/></div>
+    <div><Cart store={store} /></div>
   );
 }  
  
@@ -52,17 +52,17 @@ const payment=()=>{
 
 
 function App(){
-
+  
   return (
     <div className="App">
     <BrowserRouter>
       <Switch>
         
           <Route path="/" component={homepage} exact={true}/>
-          <Route path="/list" component={list} exact={true}/>
           <Route path="/list/:id" component={list} exact={true}/>
-          <Route path="/prod" component={details} exact={true}/>
+          <Route path="/prod/:id" component={details} exact={true}/>
           <Route path="/login" component={login} exact={true}/>
+          <Route path="/search/" component={list} exact={true}/>
           <Route path="/cart" component={cart} exact={true}/>
           <Route path="/payment" component={payment} exact={true}/>
           <Route component={notFound}/>

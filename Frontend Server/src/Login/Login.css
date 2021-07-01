@@ -7,7 +7,7 @@
 }    
 
 .card1 {
-    background-color: yellowgreen;
+    background:url('./login.jpg');
 }
 
 .cards{
@@ -20,9 +20,18 @@
     background-color: #e7e7e7;
 }    
 
-.Input{
-    font-size:20px;
-}    
+Input[type="text"]{
+    font-size:15px;
+} 
+
+Input[type="password"]{
+    font-size:15px;
+} 
+
+.logout{
+    vertical-align: center;
+    height:150px;
+}
     
 
 
