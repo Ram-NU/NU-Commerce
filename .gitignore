@@ -2,6 +2,8 @@
 
 # dependencies
 Frontend Server/node_modules
+Frontend Server/src/product_listing_page/js/Redmii.js
+Frontend Server/src/product_listing_page/img/
 Backend Server/node_modules
 /.pnp
 .pnp.js
