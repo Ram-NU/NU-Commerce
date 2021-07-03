@@ -38,22 +38,31 @@ function Login(props) {
   
     const submit=(hist)=>{
         if(isEmail(mail)){
-            signup(mail,password);
-            store.dispatch({
-                type:"CREDENTIALS",
-                payload:{
-                    mail:mail,
-                    password:password
-                }
-            })
-            hist.push('/')
+            if(password.length<8){
+                console.log(password.length)
+                store.dispatch({
+                    type:"STATUS",
+                    payload:"Password Should have minimum 8 characters!"
+                })
+            }
+            else{    
+                signup(mail,password);
+                store.dispatch({
+                    type:"CREDENTIALS",
+                    payload:{
+                        mail:mail,
+                        password:password
+                    }
+                })
+                hist.push('/')
+            }  
         }
         else {
             store.dispatch({
                 type:"STATUS",
                 payload:"Please enter Proper E-mail"
             })
-        }   
+        } 
     }
     
     const submit1=(hist)=>{

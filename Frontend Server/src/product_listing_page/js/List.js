@@ -35,6 +35,7 @@ function List(){
             var products= [{}]
             if(product!=="Error"){
                 products=await getItem(product)
+                products=products.filter((item)=>item.type!=="top offer")
             }
             if(id){
                 products=await getProduct(id.toLowerCase())

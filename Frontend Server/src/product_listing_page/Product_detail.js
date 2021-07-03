@@ -4,7 +4,6 @@ import Navigation from '../homepage/js/Navigation';
 import Category from '../homepage/js/Category';
 import Footer from '../homepage/js/Footer';
 import './css/Product_detail.css';
-import {redmii} from './js/Redmii.js';
 import {store} from '../Redux/Redux'
 import {getItem} from '../Actions/ProductAction'
 
@@ -52,7 +51,7 @@ function Productdetail(){
                 
                 <div className="details">
                     <div className="image">
-                        <img src={data.image} alt={redmii.image}/>
+                        <img src={data.image} alt={data.image}/>
                     </div> 
             
                     <div className="det">

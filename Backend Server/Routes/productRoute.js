@@ -8,7 +8,7 @@ app.use(cors())
 
 app.post('/products',async(request,response)=>{
     const product= ProductModel.insertMany(request.body)
-        console.log(request.body)
+       
     try{
         await product.save()
         response.send(product)
@@ -21,7 +21,7 @@ app.post('/products',async(request,response)=>{
 app.get('/products/:id',async(request,response)=>{
     const data=request.params.id
     const product=await ProductModel.find({type:data})
-
+       
         try{
             response.send(product)
         }
