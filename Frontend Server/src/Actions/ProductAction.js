@@ -1,5 +1,4 @@
 import Axios from 'axios';
-import {products} from 'C:/NU/NU-Commerce/Frontend Server/src/product_listing_page/js/Redmii.js'
  
 
     export const setProduct=()=>{

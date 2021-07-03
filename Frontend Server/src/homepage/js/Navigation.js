@@ -4,7 +4,7 @@ import Logo from '../img/logo.svg';
 import Cart from '../img/cart.png';
 import { useHistory } from 'react-router-dom';
 
-'
+
    
 
 function Navigation(props){
@@ -19,7 +19,7 @@ function Navigation(props){
                     hist.push('/cart')
                     break
                 case "login": 
-                   
+                    
                     hist.push('/login')
                     break 
                 case "search": 
