@@ -46,7 +46,7 @@ const cart=(hist1)=>{
  
 const payment=()=>{
   return(
-    <div><Payment/></div>
+    <div><Payment store={store}/></div>
   );
 } 
 

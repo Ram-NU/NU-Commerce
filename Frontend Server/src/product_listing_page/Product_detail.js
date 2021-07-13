@@ -1,5 +1,5 @@
 import React,{useState,useEffect} from 'react';
-import {useParams} from 'react-router-dom';
+import {useParams,useHistory} from 'react-router-dom';
 import Navigation from '../homepage/js/Navigation';
 import Category from '../homepage/js/Category';
 import Footer from '../homepage/js/Footer';
@@ -8,29 +8,36 @@ import {store} from '../Redux/Redux'
 import {getItem} from '../Actions/ProductAction'
 
 
-
-const buttons=(opt)=>{
-    alert(opt);
-}   
-    
-const cart=(product,price,image)=>{
-    buttons(product+" is added to cart")
-    store.dispatch({
-        type:'ADD',
-        payload:{
-            product:product,
-            price:price,
-            img:image
-        }    
-    })
-}    
-
-
 function Productdetail(){
 
     const {id}=useParams()
     const[data,changeData]=useState({})
-    
+    const hist=useHistory()
+
+
+    const buy=(data,hist)=>{
+        store.dispatch({
+            type:'ADD',
+            payload:{
+                product:data.category,
+                price:data.price,
+                img:data.image
+            }    
+        })
+        hist.push('/cart')
+    }   
+        
+    const cart=(product,price,image,hist)=>{
+        store.dispatch({
+            type:'ADD',
+            payload:{
+                product:product,
+                price:price,
+                img:image
+            }    
+        })
+        hist.push('/cart')
+    }    
     
     useEffect( ()=>{
         async function fetchData() {
@@ -63,8 +70,8 @@ function Productdetail(){
                                 <p><b>About: </b>{data.spec}</p>
                         </div> 
                         <br/>
-                        <button onClick={()=>{cart(data.category,data.price,data.image)}}>Add to cart</button>
-                        <button onClick={()=>{buttons("Buy")}}>Buy</button>
+                        <button onClick={()=>{cart(data.category,data.price,data.image,hist)}}>Add to cart</button>
+                        <button onClick={()=>{buy(data,hist)}}>Buy</button>
                     </div> 
                 </div>  
         

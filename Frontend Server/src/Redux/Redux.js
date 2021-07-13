@@ -21,13 +21,21 @@ const reducer=(state=State,action)=>{
         case "VALID":
             return valid(state,action.payload) 
         case "CREDENTIALS":
-            return credentials(state,action.payload)         
+            return credentials(state,action.payload)
+        case "PAID":
+            return clearCart()             
         default:
             return state    
     }   
 }      
 
 export const store=createStore(reducer)
+
+export const clearCart=(state)=>{
+    return {
+        ...state,items:[],total:0,empty:true
+    }
+}
 
 export const changeStatus=(state,status)=>{
     return {

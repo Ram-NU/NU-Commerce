@@ -1,14 +1,14 @@
 import React,{useEffect,useState} from 'react';
 import {useHistory,useParams,useLocation} from 'react-router-dom';
-import Navigation from 'C:/NU/NU-Commerce/Frontend Server/src/homepage/js/Navigation.js';
-import Category from 'C:/NU/NU-Commerce/Frontend Server/src/homepage/js/Category.js';
-import Footer from 'C:/NU/NU-Commerce/Frontend Server/src/homepage/js/Footer.js';
-import 'C:/NU/NU-Commerce/Frontend Server/src/homepage/css/Card-view.css'
+import Navigation from '../../homepage/js/Navigation.js';
+import Category from '../../homepage/js/Category.js';
+import Footer from '../../homepage/js/Footer.js';
+import '../../homepage/css/Card-view.css'
 import '../css/List.css';
 
 
-import { getItem } from 'C:/NU/NU-Commerce/Frontend Server/src/Actions/ProductAction.js';
-import { getProduct } from 'C:/NU/NU-Commerce/Frontend Server/src/Actions/ProductAction.js';
+import { getItem } from '../../Actions/ProductAction.js';
+import { getProduct } from '../../Actions/ProductAction.js';
 
 function List(){
 

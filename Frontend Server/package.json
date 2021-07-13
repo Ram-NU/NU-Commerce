@@ -24,6 +24,7 @@
     "react-sidebar": "^3.0.2",
     "redux": "^4.1.0",
     "validator": "^13.6.0",
+    "vue-ccard": "^1.0.6",
     "web-vitals": "^1.0.1"
   },
   "scripts": {

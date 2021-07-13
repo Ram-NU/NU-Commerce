@@ -1,4 +1,5 @@
 import Axios from 'axios';
+import {products} from '../product_listing_page/js/Redmii.js'
  
 
     export const setProduct=()=>{
