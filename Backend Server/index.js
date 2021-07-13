@@ -6,7 +6,7 @@ const mongoose=require('mongoose')
 
 app.use(express.json());
 
-const uri='mongodb+srv://ram:mongodb@cluster0.nsnj5.mongodb.net/NUcart'
+const uri='mongodb+srv://user:password@cluster0.nsnj5.mongodb.net/NUcart'
 mongoose.connect(uri,{ useNewUrlParser: true, useUnifiedTopology: true },
     () => console.log(" Mongoose is connected"))
 
